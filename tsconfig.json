@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@app": ["./"],
+      "@src": ["./src"],
+      "@/assets/*": ["assets/*"],
+      "@/common/*": ["common/*"],
+      "@/config/*": ["config/*"],
+      "@/store/*": ["store/*"],
+      "@/navigator/*": ["navigator/*"],
+      "@/pages/*": ["pages/*"],
+      "@/utils/*": ["utils/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-native"
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}
